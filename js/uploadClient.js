@@ -7,7 +7,7 @@ if (navigator.userAgent.indexOf('HUAWEI') != -1 || navigator.userAgent.indexOf('
         // container: 'container',
         rename:true,
         // url : '../upload.php',
-        url: "/upload",
+        url: "http://courseware.wilddogapp.com/upload",
 
         flash_swf_url: 'js/plupload/Moxie.swf', //引入flash,相对路径
     })
@@ -18,7 +18,7 @@ if (navigator.userAgent.indexOf('HUAWEI') != -1 || navigator.userAgent.indexOf('
         // container: 'container',
         rename:true,
         // url : '../upload.php',
-        url: "/upload",
+        url: "http://courseware.wilddogapp.com/upload",
 
         flash_swf_url: 'js/plupload/Moxie.swf', //引入flash,相对路径
         filters: [{
