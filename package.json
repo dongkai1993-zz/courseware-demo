@@ -1,0 +1,25 @@
+{
+  "name": "courseware-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "config.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "qiniu": "^7.1.1"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dongkai1993/courseware-demo.git"
+  },
+  "author": "dongkai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dongkai1993/courseware-demo/issues"
+  },
+  "homepage": "https://github.com/dongkai1993/courseware-demo#readme"
+}
