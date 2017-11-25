@@ -7,3 +7,7 @@
 
 ### 启动 server
 `node courseware-server.js`
+
+### 访问
+
+https://localhost:3060
