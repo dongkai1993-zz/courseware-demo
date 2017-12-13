@@ -41,13 +41,13 @@ var initOfficeDisplay = function(ref, wdBoard) {
                 $('.pdf-page-controls').hide();
                 $('#ppt-frame').show();
                 isPptMode = true;
-                wsUrl = 'ws://pptsyncserver.wilddogapp.com/api/Ppt/?isListener=true&syn=' + excludeSpecial(fileInfo.name) + '&user=' + Date.now();
+                wsUrl = 'wss://pptsyncserver.wilddog.com/api/Ppt/?isListener=true&syn=' + excludeSpecial(fileInfo.name) + '&user=' + Date.now();
                 if (pptSyncWs) {
                     pptSyncWs.close();
                 } else {
                     establishConnection();
                 }
-                var url = 'http://pptserver.wilddogapp.com/?n=5&syn=' + excludeSpecial(fileInfo.name) + '&furl=' + snapshot.val().urls[0];
+                var url = 'https://pptserver.wilddogapp.com/?n=5&syn=' + excludeSpecial(fileInfo.name) + '&ssl=1&furl=' + snapshot.val().urls[0];
                 $('#ppt-frame').attr('src', url);
             } else {
                 currentPdfFile = snapshot.val();

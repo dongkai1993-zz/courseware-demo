@@ -4,11 +4,11 @@
   "description": "",
   "main": "config.js",
   "dependencies": {
+    "ejs": "^2.5.7",
     "express": "^4.16.2",
     "qiniu": "^7.1.1"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

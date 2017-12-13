@@ -7,7 +7,7 @@ if (navigator.userAgent.indexOf('HUAWEI') != -1 || navigator.userAgent.indexOf('
         // container: 'container',
         rename:true,
         // url : '../upload.php',
-        url: "http://courseware.wilddogapp.com/upload",
+        url: "https://convertoffice.wilddog.com/upload",
 
         flash_swf_url: 'js/plupload/Moxie.swf', //引入flash,相对路径
     })
@@ -18,7 +18,7 @@ if (navigator.userAgent.indexOf('HUAWEI') != -1 || navigator.userAgent.indexOf('
         // container: 'container',
         rename:true,
         // url : '../upload.php',
-        url: "http://courseware.wilddogapp.com/upload",
+        url: "https://convertoffice.wilddog.com/upload",
 
         flash_swf_url: 'js/plupload/Moxie.swf', //引入flash,相对路径
         filters: [{
@@ -53,8 +53,9 @@ uploader.bind('Error',function(uploader,err){
 
 uploader.bind('FileUploaded',function(uploader,file,result){
     console.log('FileUploaded!', result);
+    var status = JSON.parse(result.response).status;
     var results = JSON.parse(result.response).results;
-    if (results.status = 'success') {
+    if (status == 'success') {
         results.date = Date.now();
         wilddog.sync().child('officeFiles').push(results).then(function () {
             if (results.errors.length==0) {
